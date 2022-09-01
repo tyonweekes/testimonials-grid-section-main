@@ -1,0 +1,209 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(0, 0%, 81%);
+    --light-greyish-blue: hsl(210, 46%, 95%);
+}
+
+.main-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+/* All Sub-Containers */
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid var(--white);
+    margin-right: 18px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.full-name {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 17px;
+}
+
+.white-full-name {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: var(--very-dark-grayish-blue);
+    font-size: 17px;
+}
+
+.title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.white-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: var(--very-dark-grayish-blue);
+    font-size: 14px;
+    opacity: 50%;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+body {
+    background-color: var(--light-greyish-blue);
+}
+
+.sub-container {
+    padding: 40px;
+    border-radius: 5px;
+}
+
+/* Purple Containers */
+
+.purple {
+    background-color: var(--moderate-violet);
+    position: relative;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.purple h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 26px;
+    z-index: 200;
+    position: relative;
+}
+
+.purple .testimonial {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 70%;
+}
+
+.quote-mark {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    z-index: 1;
+}
+
+img.quotation-mark {
+    width: 160px;
+    height: auto;
+    z-index: 1;
+}
+
+/* Grey Containers */
+.grey {
+    background-color: var(--very-dark-grayish-blue);
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.grey h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 26px;
+}
+
+.grey .testimonial {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 70%;
+}
+
+/* White Containers */
+.white {
+    background-color: var(--white);
+}
+
+.white h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: var(--very-dark-grayish-blue);
+    font-size: 26px;
+}
+
+.white .testimonial {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: var(--very-dark-grayish-blue);
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 70%;
+}
+
+.first-white {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.second-white {
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 2;
+}
+
+/* Black Containers */
+.black {
+    background-color: var(--very-dark-blackish-blue);
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.black h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    font-size: 26px;
+}
+
+.black .testimonial {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 70%;
+}
+
+/* Attribution */
+.attribution {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: var(--very-dark-grayish-blue);
+}
+
+.attribution a {
+    color: var(--moderate-violet);
+}
